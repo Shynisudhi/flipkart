@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width ,initial_scale=1.0">
+        <style>
+          *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;}
+.container
+{
+display: flex;
+flex-direction: column;
+width: 100%;
+background-color:white;
+}
+  div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color:blue;
+  border: 1px solid blue;
+}
+
+.search .search1 {
+justify-content: flex-end;
+height: 50px;
+border-radius: 2px;
+cursor: pointer;
+padding: 20px 20px 8px 5px;
+background-color: transparent
+                
+}
+.content
+{
+    flex: 1;
+     background-color:white;
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 1%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+   }
+   .contentnew
+{
+    flex: 1;
+     background-color:aliceblue;
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;}
+
+   footer{
+    height: 55vh;
+    background-color: #172337;
+   } 
+nav
+{
+height: 10vh;
+background-color: aliceblue;
+text-align: left;
+border-radius: 10px;
+margin: 1%;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+} 
+      
+.link{
+color: blue;
+font-size: 15px;
+text-decoration: none;
+}
+link:link{
+    color: olivedrab;
+}
+.link:visited{
+    color:yellow
+}
+.link:hover{
+    color: red;
+    font-size: 20px;
+}
+.link:active
+{
+color: pink;
+}   
+    
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     width: 10%; 
+}
+.productlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     width: 16%; 
+}
+.gridcontainer
+   {
+    display: grid;
+    background-color:white;
+    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(4, 1fr);  
+   }  
+  .gridfooter
+   {
+    display: grid;
+    background-color:white;
+     grid-template-rows: repeat(6, 100px);
+     grid-template-columns: repeat(4, 1fr);  
+   }
+  .items{
+    border: 1px solid white;
+   }
+item1{
+    display:grid;
+}
+itemnew{
+  display:grid;f
+  background-color: white;
+}
+/* .abc {
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+    font-weight: 500;
+} */
+.row{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: self-start;
+  justify-content: space-between;
+}
+/* .row1{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: self-start;
+  justify-content: space-between;
+} */
+.col{
+  flex-basis: 20%;
+ }
+.col1{
+  flex-basis: 10%;
+   
+}
+ul li{
+  list-style: none;
+  font-size: 12px;
+  margin-top: 10px;
+  }
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footerflex {
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 40px;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.seller{
+display: flex;
+align-items: center
+}
+
+button[type="submit"] {
+background: none;
+border: none;
+cursor: pointer;
+padding: 0;
+margin-left: -35px; /* Adjust to properly position the button */
+}
+
+button[type="submit"] img {
+width: 20px;
+height: auto;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 350px;
+    font-size: 16px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+ <div class="sticky"><img src="images/logo.png" width="110px" height="40px" style="padding-left:50px;margin-top: 25px;">
+  <div class="row"> 
+    <form>
+    <div class="seller">
+    <!-- <img src="images/advertise.jpg" width="10" height="10"> -->
+       <input type="text" placeholder="Search products" style="width: 320px; height: 30px;padding-left: 150px;margin-bottom:20px;box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);">
+           <!-- <button type="submit">Search</button> -->
+           <!-- <input type="text" placeholder="Search..."> -->
+           <button type="submit"><img src="images/magnifier.png" style="margin-bottom: 10px;" alt="Search"></button>
+    </form> 
+  </div>
+    <div class="col">
+      <a class="" title="Login" aria-haspopup="true" href=""  style="text-decoration: none; font-size: 20px;color: black;">
+          <img src="images/login.png" alt="Login" class="" width="20" height="20"/>
+          <span>Login</span>
+      </a>
+    </div>
+    <div class="col1">
+      <a class="" title="" aria-haspopup="true" href=""  style="text-decoration: none; font-size: 20px;color: black;">
+          <img src="images/cart.png" alt="cart" class="" width="20" height="20"/>
+          <span>Cart</span>
+      </a>
+    </div>
+    <div class="col">
+      <a class="" title="seller" aria-haspopup="true" href=""  style="text-decoration: none; font-size: 20px;color: black;">
+          <img src="images/seller.jpg" alt="seller" class="" width="20" height="20"/>
+          <span style="width: 100px;">Become a Seller</span>
+      </a>
+    </div>
+    </div>
+  </div>
+
+  </div>  
+   <div class="content">
+   <div class="product">
+        <div class="product-image">
+          <img src="images/gro.jpg" width="100" height="100">
+        </div>
+        <a href="" style="text-decoration: none;">Grocery</a>
+    </div>
+    <div class="product">
+        <div class="product-image">
+          <img src="images/mobiles.png" width="100" height="100">
+        </div>
+        <a href="" class="link:hover"    style="text-align: center;text-decoration: none;">Mobile</a>
+    </div>
+    <div class="product">
+        
+        <div class="product-image">
+          <img src="images/fashion.png" width="100" height="100">
+        </div>
+        <a href="" class="link:hover"  style="text-align: center;text-decoration: none;">Fashion</a>
+    </div>
+
+    <div class="product">
+        
+        <div class="product-image">
+          <img src="images/toys.png" width="100" height="100">
+        </div>
+        <a href="" class="link:hover"  style="text-align: center; text-decoration: none;">Beauty&Toys</a>
+    </div>
+
+    <div class="product">
+        
+        <div class="product-image">
+          <img src="images/travel.png" width="100" height="100">
+        </div>
+        <a href="" class="link:hover"  style="text-align: center; text-decoration: none;">Travel</a>
+    </div>
+
+    <div class="product">
+        
+        <div class="product-image">
+          <img src="images/appliances.png" width="100" height="100">
+        </div>
+        <a href="" class="link:hover"  style="text-align: center; text-decoration: none;">Appliances</a>
+    </div>
+    <div class="product">
+        
+        <div class="product-image">
+          <img src="images/electronics.png" width="100" height="100">
+        </div>
+        <a href="" class="link:hover"  style="text-align: center; text-decoration: none;"> Electronicss </a>
+    </div>
+    <div class="product">
+        
+        <div class="product-image">
+          <img src="images/twowheeler.webp" width="100" height="100">
+        </div>
+        <a href=""  class="link:hover" style="text-align: center; text-decoration: none;"> Two wheelers </a>
+    </div>
+    <div class="product">
+        
+      <div class="product-image">
+        <img src="images/air condition.jpg" width="100" height="100">
+      </div>
+      <a href="" class="link:hover"  style="text-align: center; text-decoration: none;"> Air condition </a>
+  </div>
+  <div class="product">
+        
+    <div class="product-image">
+      <img src="images/security.jpg" width="100" height="100">
+    </div>
+    <a href=""  class="link:hover" style="text-align: center; text-decoration: none;">SecurityCamera </a>
+</div>
+    <div class="child">
+        
+    
+<div>
+
+
+    </div>
+<table width="100px">
+<div>
+<img src="images/banner.jpeg" style="width:100%">
+</div>
+</table>
+<br/>
+<nav><h2>Best of Electronics </h2></nav>
+</div>  
+<div class="content">
+<div class="productlist">
+  <div class="product-image">
+    <img src="images/selfie.jpg" width="150" height="150">
+  </div>
+  <div class="product-info">
+    <h5 class="h5">Fashion dress</h5>
+    <h6 class="detais">From ₹3000</h6>
+  </div>
+</div>
+
+<div class="productlist">
+  <div class="product-image">
+    <img src="images/acer.jpg" width="150" height="150">
+  </div>
+  <div class="product-info">
+    <h5 class="h5">Acer</h5>
+    <h6 class="detais">From ₹25000</h6>
+  </div>
+</div>
+
+<div class="productlist">
+  <div class="product-image">
+    <img src="images/printer2.jpg" width="150" height="150">
+  </div>
+  <div class="product-info">
+    <h5 class="h5">Printer</h5>
+    <h6 class="detais">From ₹9000</h6>
+  </div>
+</div>
+
+<div class="productlist">
+  <div class="product-image">
+    <img src="images/gamepad.jpg" width="150" height="150">
+  </div>
+  <div class="product-info">
+    <h5 class="h5">Game Pad</h5>
+
+    <h6 class="detais">From ₹30000</h6>
+  </div>
+</div>
+<div class="productlist">
+  <div class="product-image">
+    <img src="images/speaker.jpg" width="150" height="150">
+  </div>
+  <div class="product-info">
+    <h5 class="h5">Speaker</h5>
+    <h6 class="detais">From ₹8000</h6>
+  </div>
+</div>
+<div class="productlist">
+  <div class="product-image">
+    <img src="images/iphone.jpg" width="150" height="150">
+  </div>
+  <div class="product-info">
+    <h5 class="h5">Iphone 15</h5>
+   <h6 class="detais">From ₹145000</h6>
+  </div>
+</div>
+
+
+
+</div>
+
+</div>
+<nav><h2>Beauty  Food toys & more</h2></nav>
+
+<div class="content">
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/cycle.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">Fashion dress</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  </div>
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/toys.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">Fashion dress</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  </div>
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/puzzle.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">Fashion dress</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  </div>
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/dryfruits.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">dryfruits</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  </div>
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/cycle.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">cycle</h5>
+      <h6 class="detais">From ₹10000</h6>
+    </div>
+  </div>
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/toy.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">toy</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  </div>
+</div>
+<nav><h2>Best of Health &wellness</h2></nav>
+<div class="content">
+
+  <div class="productlist">
+    <div class="product-image">
+      <img src="images/trackpant.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">trackpant</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  </div> <div class="productlist">
+    <div class="product-image">
+      <img src="images/trackpant.jpg" width="150" height="150">
+    </div>
+    <div class="product-info">
+      <h5 class="h5">trackpant</h5>
+      <h6 class="detais">From ₹3000</h6>
+    </div>
+  
+ 
+  </div>
+<nav><h1 style="padding-top: 0;text-align: center;">Top Selling SmartPhones</h1></nav>
+  <div class="content" style="align-items: flex-end;">
+  
+
+   
+    <div class="items itemnew"><img src="images/iphone.jpg" width="200" height="200">
+     
+    </div>
+    <div class="items itemnew"><img src="images/iphone.jpg" width="200" height="200">
+     </div>
+  
+
+   
+    </div>
+
+  </div>
+  <!-- footer starts -->
+  <footer>
+  <div class="row">
+    <div class="col"><h3 style="color: #878787; margin-top: 20px;font-size: 12px;">ABOUT</h3>
+    <ul>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="career.html">Careers</a></li>
+      <li><a href="flip.html">FlipKart Stories</a></li>
+      <li><a href="press.html">Press</a></li>
+      <li><a href="career.html">Corporate information</a></li>
+      
+    </ul>
+    </div>
+  
+    <div class="col"><h3 style="color: #878787;margin-top: 20px;font-size: 12px;">GROUP COMPANIES</h3>
+      <ul>
+        <li><a href="https://www.myntra.com/">Myntra</a></li>
+        <li><a href="https://www.flipkartwholesale.com/?otracker=undefined_footer_navlinks">Flipkart wholesale</a></li>
+        <li><a href="https://qa.cleartrip.com/">Cleartrip</a></li>
+        <li><a href="https://www.shopsy.in/">shopsy</a></li>
+       
+      </ul>
+      </div>
+      <div class="col"><h3 style="color: #878787;margin-top: 20px;font-size: 12px;">HELP</h3>
+        <ul>
+          <li><a href="https://www.flipkart.com/pages/payments">Payments</a></li>
+          <li><a href="https://www.flipkart.com/pages/shipping">Shipping</a></li>
+          <li><a href="https://www.flipkart.com/helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG">FAQ</a></li>
+          <li><a href="https://seller.flipkart.com/page-not-found">Report</a></li>
+         
+        </ul>
+        </div>
+            <div class="col"><h5 style="color: #878787; margin-top: 10px;" >Mail Us:</h5>
+            <p style="color: white;font-size: 12px;margin-top: 10px;">Flipkart Internet Pvt Ltd</p>
+            <p  style="color: white;font-size: 12px;margin-top: 10px;">Buildings alyssa Begonia&</p>
+            <p style="color: white;font-size: 12px;margin-top: 10px;">Clove Embassy Tech village</p>
+            <p style="color: white;font-size: 12px;margin-top: 10px;"> Outer Ring Road, Devarabeesanahalli Village,</p>
+            <p style="color: white;font-size: 12px;margin-top: 10px;">Bengaluru,</p>
+            <p style="color: white;font-size: 12px;margin-top: 10px;"> Karnataka</p>
+            <div class="col"><h6 style="color: #878787;font-size: 14px;">Social</h6>
+              <img src="images/facebook.png" width="30px" height="20px" style="margin-bottom: 5px;"><a href="https://www.flipkart.com/pages/shipping"></a>
+              <img src="images/twiter.png" width="30px" height="20px" style="margin-bottom: 5px;"><a href="https://www.flipkart.com/pages/shipping"></a>
+              <img src="images/youtube.png" width="30px" height="20px" style="margin-bottom: 5px;"><a href="https://www.flipkart.com/pages/shipping"></a>
+             </div>
+
+            </div>
+            <div class="col"><h5 style="color: #878787; margin-top: 10px;">Registred Office Address</h5>
+              <p style="color: white;font-size: 12px;margin-top: 10px;">Flipkart Internet Pvt Ltd</p>
+              <p  style="color: white;font-size: 12px;margin-top: 10px;">Buildings alyssa Begonia&</p>
+              <p style="color: white;font-size: 12px;margin-top: 10px;">Clove Embassy Tech village</p>
+              <p style="color: white;font-size: 12px;margin-top: 10px;"> Outer Ring Road, Devarabeesanahalli Village,</p>
+              <p style="color: white;font-size: 12px;margin-top: 10px;">Bengaluru, 560103,</p>
+              <p style="color: white;font-size: 12px;margin-top: 10px;">CIN : U51109KA2012PTC066107 </p>
+              <p style="color: white;font-size: 12px;margin-top: 10px;">Telephone: 044-45614700</p>
+              </div>
+
+          </div>
+<div style="border-top: 1px solid  white; width: 1500px;"></div>
+<div class=""></div>
+<div class="seller">
+  <a href="https://seller.flipkart.com/">
+      <img src="images/seller.jpg" alt="Become a Seller" width="30px" height="20px" style="margin-left: 20px;margin-top:10px;" />
+  </a>
+  <a href="https://seller.flipkart.com/" style="color: white;text-decoration: none;margin-left: 20px;margin-top: 10px;">Become a Seller</a>
+  <a href="https://seller.flipkart.com/">
+    <img src="images/advertise.jpg" alt="Advertise" width="30px" height="20px" style="margin-left: 30px;margin-top: 10px;"/>
+</a>
+<a href="https://seller.flipkart.com/" style="color: white;text-decoration: none;margin-left: 30px;margin-top: 10px;">Advertise</a>
+<a href="https://seller.flipkart.com/">
+  <img src="images/gift.jpg" alt="Gift" width="30px" height="20px" style="margin-left: 30px;margin-top: 10px;"/>
+</a>
+<a href="https://seller.flipkart.com/" style="color: white;text-decoration: none;margin-left: 30px;margin-top: 10px;">Giftcards</a>
+
+<a href="https://seller.flipkart.com/" class="_3RX0a- _3jeYYh">
+  <img src="images/help.jpg" alt="Help" width="30px" height="20px" style="margin-left: 30px;margin-top:10px;"/>
+</a>
+<a href="https://seller.flipkart.com/" style="color: white;text-decoration: none;margin-left: 30px;margin-top: 10px;">Help Center</a>
+<span style="color: white; margin-left: 40px;margin-top: 10px;">
+  © 2007-
+  <!-- -->
+  2024
+  <!-- -->
+  <span>Flipkart.com</span>
+</span>
+<span style="margin-left: 70px; margin-top: 10px;" ><img src="images/visa.jpg" width="300px" height="30px"  alt="Payment methods"/></span>
+</div>
+</div>
+</footer>
+</body>
+</html>
